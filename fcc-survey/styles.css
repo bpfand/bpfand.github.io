@@ -1,1 +1,56 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
 
+h1 p {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin: 1em 0 0.3em 0.5em;
+  font-size: 16px;
+}
+
+input{
+  font-size: 16px;
+}
+
+select {
+  display: block;
+  margin-left: 1em;
+  font-size: 16px;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+textarea {
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+input[class="text-box"] {
+  width: 75%;
+}
+
+input[type="number"] {
+  width: 75px;
+}
+
+label[class="select-label"] {
+  margin: 0 0 0 1em;
+}
