@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">This is a form</h1>
+    <p id="description">This is a form that will collect data and look kinda nice</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input type="text" id="name" name="name" class="text-box" placeholder="Full name" required /></label>
+
+        <label for="email" id="email-label">Email: <input type="email" id="email" name="email" class="text-box" placeholder="Personal email" required /></label>
+
+        <label for="number" id="number-label">Age: <input type="number" id="number" name="number" min="13" max="125" placeholder="13-125" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite Powerpuff Girl:</legend>
+        <select id="dropdown">
+          <option>Blossom</option>
+          <option>Bubbles</option>
+          <option>Buttercup</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Takes on the show:</legend>
+        Favorite villian:</br>
+        <div id="villian-div">
+          <label for="mojo" class="select-label"><input  type="radio" id="mojo" name="villian" value="mojo" /> Mojo Jojo</label>
+
+          <label for="rowdy" class="select-label"><input  type="radio" id="rowdy" name="villian" value="rowdy" /> The Rowdyruff Boys</label>
+
+          <label for="gangreen" class="select-label"><input type="radio" id="gangreen" name="villian" value="gangreen" /> The Gangreen Gang</label>
+
+          <label for="morbucks" class="select-label"><input type="radio" id="morbucks" name="villian" value="morbucks" /> Princess Morbucks</label>
+        </div>
+
+        <div id="checkbox-div">
+          Seasons you have watched:
+          <label for="cb-1" class="select-label"><input  type="checkbox" id="cb-1" name="season-1" value="1" /> Season 1</label>
+          <label for="cb-2" class="select-label"><input  type="checkbox" id="cb-2" name="season-2" value="2" /> Season 2</label>
+          <label for="cb-3" class="select-label"><input  type="checkbox" id="cb-3" name="season-3" value="3" /> Season 3</label>
+          <label for="cb-4" class="select-label"><input  type="checkbox" id="cb-4" name="season-4" value="4" /> Season 4</label>
+          <label for="cb-5" class="select-label"><input  type="checkbox" id="cb-5" name="season-5" value="5" /> Season 5</label>
+          <label for="cb-6" class="select-label"><input  type="checkbox" id="cb-6" name="season-6" value="6" /> Season 6</label>
+        </div>
+        <div id="textarea-div">
+          <label for="textarea">Thoughts on the show: <textarea id="textarea" rows="4" cols="100" placeholder="Let us know anything else you'd like to share!"></textarea></label>
+        </div>
+      </fieldset>
+
+      <input id="submit" type="Submit">
+    </form>
+  </body>
+</html>
