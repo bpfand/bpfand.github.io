@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Plug's Butt-Ugly Stuff Hut</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://lh3.googleusercontent.com/d/1ErUKdP6WBQcOyNh60E803ccOPZGKU1Oi" alt="Old man logo - from freepik.com" />
+      <h1>Plug's Butt-Ugly Stuff Hut</h1>
+      <nav id="nav-bar">
+        <ul class="nav-list">
+          <li class="stuff-nav"><a class="nav-link" href="#armor">Armor Stuffs</a></li>
+          <li class="stuff-nav"><a class="nav-link" href="#weapons">Weapon Stuffs</a></li>
+          <li class="stuff-nav"><a class="nav-link" href="#other">Just Stuffs</a></li>
+          <li class="sect-nav"><a class="nav-link" href="#about">About Plug</a></li>
+          <li class="sect-nav"><a class="nav-link" href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h2>Welcome to the Stuff Hut</h2>
+        <div class="subline">
+        <h4>Where we've got the butt-ugly stuff to help you die tomorrow, not today!*</h4>
+        <p class="disclaimer">*We offer no guarantee about not dying</p>
+        </div>
+      </section>
+
+      <section id="stuff">
+        <div id="armor">
+          <h2>Buy Armor Stuffs!</h2>
+          <h4>Good at stopping bullets and other things that want to kill you!<span class="asterix">*</span></h4>
+          <p class="disclaimer">*We offer no guarantee about our armor stopping any bullets, or anything else dangerous</p>
+          <div class="items">
+            <img src="https://static.wikia.nocookie.net/masseffect/images/5/59/MEA_Deep_Space_Explorer_Armor.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/1/1b/MEA_Heleus_Defender_Armor.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/7/70/MEA_Andromeda_Elite_Helmet.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/6/60/MEA_HyperGuardian_Chest.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/0/01/MEA_Maverick_Skirmisher_Helmet.png" />
+          </div>
+        </div>
+
+        <div id="weapons">
+           <h2>Buy Weapon Stuffs!</h2>
+          <h4>Good at killing your enemies before they kill you!*</h4>
+          <p class="disclaimer">*We offer no guarantee about our weapons killing anything. And if they do, we take no legal responsiblity for the deaths</p>
+          <div class="items">
+            <img src="https://static.wikia.nocookie.net/masseffect/images/a/aa/MEA_M-8_Avenger_MP.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/0/00/Omni-Blade.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/4/40/MEA_Viper_MP.png" />
+            <img src="https://static.wikia.nocookie.net/masseffect/images/5/59/Pathfinder-Ranger.png" />
+          </div>
+        </div>
+
+        <div id="other">
+          <h2>Buy Other Stuffs!</h2>
+          <h4>Good at everything else you need!<span class="asterix">*</span></h4>
+          <p class="disclaimer">*We offer no guarantee that our stuff is good at things</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <h4>Meet our founder - Plug!</h4>
+        <iframe id="video" width="400" height="250" src="https://www.youtube.com/embed/K97whjSi7No?si=75v136rFghIusfTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="join">
+        <h2>Join the Stuff Hut family!</h2>
+        <h4>Deals you wouldn't believe, and maybe a free rescue from Plug himself!</h4>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" >
+          <input id="email" name="email" type="email" placeholder="Enter your email address" />
+          <input type="submit" id="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+</html>
