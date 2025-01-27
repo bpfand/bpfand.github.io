@@ -1,4 +1,22 @@
-.contact-div form {
+:root {
+  --black: black;
+  --white: white;
+  --site-gray1: #E9EAEC;
+  --site-gray2: #828a95;
+  --site-gray3: #4B5158;
+  --site-purp1: #d5c9df;
+  --site-purp2: #9C7EB4;
+  --site-purp3: #49355A;
+  --site-red1: #F5CCCC;
+  --site-red2: #DB4B4B;
+  --site-red3: #771818;
+  --site-bluewhite: #E3E7F2;
+  --site-blue1: #B9C3DF;
+  --site-blue2: #647BB9;
+  --site-blue3: #263254;
+}
+
+.contact-form form {
   background-color: var(--site-purp1);
   border: 2px solid var(--site-purp3);
   display: flex;
