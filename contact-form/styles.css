@@ -28,6 +28,10 @@
     border-bottom: 2px solid var(--site-purp3);
     border-radius: 5px;
   }
+
+.contact-form:last-child {
+    border: 0;
+}
   
   textarea {
     font-family: Roboto, sans-serif;
