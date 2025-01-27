@@ -16,7 +16,7 @@
   --site-blue3: #263254;
 }
 
-.contact-form form {
+form {
   background-color: var(--site-purp1);
   border: 2px solid var(--site-purp3);
   display: flex;
