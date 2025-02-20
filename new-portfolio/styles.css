@@ -1,0 +1,56 @@
+:root {
+    --darkblue: #22566D;
+    --blue: #3B8EA5;
+    --yellow: #F5EE9E;
+    --orange: #F49E4C;
+    --red: #AB3428;
+    --white: #F5F9FA;
+    --blackblue: #0A191F;
+    --darkerblue: #193E4D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+    background: linear-gradient(175deg, var(--blackblue), var(--darkerblue));
+}
+
+header {
+    background-color: var(--blackblue);
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px var(--darkerblue);
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    width: 960px;
+}
+
+#home-button {
+    font-size: 24px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--white);
+}
