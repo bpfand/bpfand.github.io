@@ -1,0 +1,169 @@
+:root {
+  --green1: #073B3A;
+  --green2: #0B6E4F;
+  --green3: #08A045;
+  --green4: #6BBF59;
+  --greenwhite: 237, 253, 253;
+  --pink: #E0BAD7;
+  --blue1: #304C73;
+  --blue2: #4872AD;
+  --blue3: #E2E9F3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(var(--green1), var(--green2));
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 94%;
+  padding: 20px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(var(--greenwhite));
+  font-size: 54px;
+  font-family: "Lora", serif;
+  text-align: center;
+  line-height: 90%;
+  margin-bottom: 10px;
+}
+
+#top-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -80px;
+}
+
+#definition {
+  max-width: 410px;
+  width: 90%;
+  font-size: 18px;
+  background-color: rgba(var(--greenwhite), 0.7);
+  padding: 5px 2px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#checker {
+  max-width: 450px;
+  width: 95%;
+  padding: 10px;
+  background-color: var(--blue3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+#checker label {
+  position: relative;
+  left: 0;
+}
+
+#text-input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--blue3);
+  border-bottom: 2px solid var(--blue1);
+  font-size: 18px;
+  border-radius: 10px;
+  text-indent: 0px;
+}
+
+.placeholder::before {
+  content: "Potential Palindrome";
+  color: gray;
+}
+
+#check-btn {
+  width: 75%;
+  font-size: 18px;
+  padding: 2px;
+  background-color: var(--blue1);
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#note {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#result-div {
+  width: 95%;
+  max-width: 450px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: var(--blue3);
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  height: 6%;
+  width: 100%;
+  padding: 2px 0 2px 20px;
+  background-color: var(--green1);
+  display: flex;
+  align-items: center;
+  color: rgb(var(--greenwhite));
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--green4);
+}
+
+@media (max-width: 420px) {
+  #top-div {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 363px) {
+  #definition {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 343px) {
+  footer {
+    font-size: 12px;
+  }
+
+  #topdiv {
+    margin-top: 10px;
+  }
+}
