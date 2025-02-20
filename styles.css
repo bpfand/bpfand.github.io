@@ -201,6 +201,7 @@ h5 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
   width: 100%;
   padding-top: 20px;
 }
@@ -254,6 +255,8 @@ h5 {
 .contact-body {
   padding-top: 20px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -315,8 +318,8 @@ h5 {
 }
 
 iframe {
-  width: 100%;
-  height: 265px;
+  width: 350px;
+  height: 285px;
   background-color: var(--site-purp1);
 }
 
@@ -345,5 +348,8 @@ iframe {
   }
   .project-tile {
     margin-bottom: 30px;
+  }
+  .contact-body {
+    flex-direction: row;
   }
 }
