@@ -49,6 +49,12 @@ textInput.addEventListener("input", () => {
   }
 })
 
+textInput.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    checkBtn.click();
+  }
+});
+
 checkBtn.addEventListener("click", () => {
   const userInput = cleanInputString(textInput.innerText.toLowerCase());
   console.log(userInput);
