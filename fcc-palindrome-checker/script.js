@@ -40,24 +40,20 @@ function checkPalindrome(str) {
 textInput.addEventListener("input", () => {
   if (textInput.innerText.charCodeAt(0) === 10) {
     textInput.classList.add('placeholder');
-    console.log("empty");
   } else {
     textInput.classList.remove('placeholder');
-    console.log(`Text-${textInput.innerText}-Text`);
-    console.log(textInput.innerText.length);
-    console.log(textInput.innerText.charCodeAt(0));
   }
 })
 
-textInput.addEventListener("keyup", function (event) {
+textInput.addEventListener("keypress", function (event) {
   if (event.keyCode === 13) {
+  	event.preventDefault();
     checkBtn.click();
   }
 });
 
 checkBtn.addEventListener("click", () => {
   const userInput = cleanInputString(textInput.innerText.toLowerCase());
-  console.log(userInput);
   if (userInput === "") {
     resultDiv.classList.add('hide');
     alert(`Please input a value`);
