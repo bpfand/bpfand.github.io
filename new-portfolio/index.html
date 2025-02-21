@@ -10,7 +10,7 @@
     <body>
         <header>
             <nav id="nav-bar">
-                <div id="home-button">Ben Pfander</div>
+                <a id="home-button" href="/" aria-label="Home Page">Ben Pfander</a>
                 <ul id="menu">
                     <a href="#about-me"><li>About</li></a>
                     <a href="#projects"><li>Projects</li></a>
@@ -21,12 +21,46 @@
         
         <main>
             <section id="about-me">
-                <h1>Hello! I'm Ben, and I'm teaching myself how to create websites.</h1>
-                <p>I'm working my way through freeCodeCamp's core curriculum</p>
+                <div id="about-me-intro">
+                    <img src="./background-graphic.png">
+                    <div id="about-me-header">
+                        <h1>Hey, I'm Ben.</h1>
+                        <h1>I'm teaching myself how to create websites.</h1>
+                    </div>
+                </div>
+
+                <div id="about-me-text">
+                    <p>
+                        I'm working my way through freeCodeCamp's core curriculum and posting my projects here as I create them. I've completed the <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" class="italic">Responsive Web Design</a> certification and am now working on the <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" class="italic">JavaScript Algorithims and Data Structures</a> course. I also like to play around with random coding projects, so those might get posted here too.
+                    </p>
+                    <p>
+                        Right now, this is mostly a fun project for me that I don't expect people to engage with although I do hope it will be useful in future.
+                        I'm not expecting anyone to reach out to me about my work, but would love to be wrong.
+                    </p>
+                    <p>
+                        My goal eventually is to build websites for whoever wants them, with a specific push for accessbility - a cause I care deeply about.
+                    </p>
+                </div>
             </section>
 
             <section id="projects">
-
+                <h2>Projects</h2>
+                <div class="project-tile">
+                    <img src="proj-images/palindrome-img.png" class="project-img">
+                    <div class="project-text">
+                        <h3>Palindrome Checker</h3>
+                        <p>This project was the first JavaScript project from <a href="freecodecamp.org">freeCodeCamp</a> - it takes a user input and determines whether that input is a palindrome.</p>
+                        <div class="project-links">
+                            <button>Visit Page</button>
+                            <button>View Source</button>
+                        </div>
+                        <ul class="project-languages">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section id="contact-me">

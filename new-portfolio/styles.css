@@ -7,6 +7,9 @@
     --white: #F5F9FA;
     --blackblue: #0A191F;
     --darkerblue: #193E4D;
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--darkblue) var(--darkerblue);
+    
 }
 
 * {
@@ -20,6 +23,12 @@ body {
     width: 100vw;
     color: var(--white);
     background: linear-gradient(175deg, var(--blackblue), var(--darkerblue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-size: 19px;
 }
 
 header {
@@ -27,6 +36,66 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: solid 2px var(--darkerblue);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+}
+
+main a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--yellow);
+}
+
+section:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.project-tile {
+    margin-top: 20px;
+    height: 280px;
+    display: flex;
+    background-color: var(--darkerblue);
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 4px var(--blackblue));
+}
+
+.project-img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 450px;
+    border-radius: 5px;
+}
+
+.project-text {
+    width: 45%;
+    padding: 20px 5px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-text h3 {
+    font-size: 24px;
+}
+
+.project-links button {
+    font-size: 19px;
+    padding: 2px;
 }
 
 #nav-bar {
@@ -35,7 +104,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
-    width: 960px;
+    width: 90%;
+    max-width: 800px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-bar a:hover {
+    color: var(--blackblue);
+    background-color: var(--blue);
+    padding: 2px 5px;
+    margin: -2px -5px;
+    border-radius: 5px;
 }
 
 #home-button {
@@ -50,7 +133,42 @@ header {
     font-size: 20px;
 }
 
-#menu a {
-    text-decoration: none;
-    color: var(--white);
+#about-me-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#about-me-intro img {
+    z-index: -1;
+    height: 350px;
+    filter: opacity(0.2);
+}
+
+#about-me-header {
+    position: absolute;
+}
+
+#about-me-header h1{
+    font-size: 66px;
+    line-height: 95%;
+    padding-bottom: 30px;
+    filter: drop-shadow(2px 2px 4px var(--blackblue));
+}
+
+#about-me-text {
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#about-me-text p {
+    max-width: 800px;
+    filter: drop-shadow(1px 1px 2px var(--blackblue));
+    padding: 5px;
 }
