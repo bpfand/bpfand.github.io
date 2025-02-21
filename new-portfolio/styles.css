@@ -1,6 +1,7 @@
 :root {
     --darkblue: #22566D;
-    --blue: #3B8EA5;
+    --blue: #3C95B9;
+    --lightblue: #C1DFEB;
     --yellow: #F5EE9E;
     --orange: #F49E4C;
     --red: #AB3428;
@@ -104,7 +105,7 @@ section:not(:first-of-type) {
 }
 
 .proj-visit-page {
-    background-color: var(--white);
+    background-color: var(--lightblue);
     color: var(--blackblue);
 }
 
