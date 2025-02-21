@@ -46,7 +46,7 @@ textInput.addEventListener("input", () => {
 })
 
 textInput.addEventListener("keypress", function (event) {
-  if (event.keyCode === 13) {
+  if (event.code === "Enter") {
   	event.preventDefault();
     checkBtn.click();
   }
