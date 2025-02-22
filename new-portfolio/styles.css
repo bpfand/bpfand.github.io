@@ -70,6 +70,7 @@ section:not(:first-of-type) {
     margin-top: 20px;
     height: 280px;
     display: flex;
+    align-items: center;
     background-color: var(--darkerblue);
     border-radius: 5px;
     filter: drop-shadow(2px 2px 4px var(--blackblue));
@@ -78,13 +79,13 @@ section:not(:first-of-type) {
 .project-img {
     object-fit: cover;
     height: 100%;
-    max-width: 425px;
+    max-width: 375px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
 .project-text {
-    padding: 20px 5px 0px 15px;
+    padding: 0px 10px 0px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +96,17 @@ section:not(:first-of-type) {
     font-size: 24px;
 }
 
-.project-links button {
+.project-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8px;
+}
+
+.project-links a {
     font-size: 16px;
+    font-weight: bold;
+    text-align: center;
     padding: 10px 0px;
     width: 150px;
     border-radius: 5px;
@@ -109,9 +119,29 @@ section:not(:first-of-type) {
     color: var(--blackblue);
 }
 
+.proj-visit-page:hover,
+.proj-view-source:hover {
+    background-color: var(--blue);
+    color: var(--blackblue);
+}
+
 .proj-view-source {
     background-color: var(--darkerblue);
     color: var(--white);
+}
+
+.project-languages {
+    margin-top: 10px;
+    padding: 0px 4px;
+    text-align: center;
+    border: solid 2px var(--darkblue)
+}
+
+.project-languages ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 #nav-bar {
