@@ -119,21 +119,20 @@ section:not(:first-of-type) {
     color: var(--blackblue);
 }
 
+.proj-view-source {
+    background-color: var(--darkerblue);
+    color: var(--white);
+}
+
 .proj-visit-page:hover,
 .proj-view-source:hover {
     background-color: var(--blue);
     color: var(--blackblue);
 }
 
-.proj-view-source {
-    background-color: var(--darkerblue);
-    color: var(--white);
-}
-
 .project-languages {
     margin-top: 10px;
     padding: 0px 4px;
-    text-align: center;
     border: solid 2px var(--darkblue)
 }
 
