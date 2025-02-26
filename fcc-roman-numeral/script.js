@@ -136,8 +136,10 @@ convertBtn.addEventListener("click", () => {
   const num = numberInput.value;
   checkNum(num);
 
-  if (isValidNum) {
+  if (isValidNum && largeNumToggle) {
     splitNum(num);
+  } else if (isValidNum) {
+    convertInput(num);
   }
   displayOutput();
 });
