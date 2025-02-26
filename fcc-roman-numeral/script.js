@@ -9,6 +9,7 @@ const explanation = document.getElementById("explanation");
 const explanationButton = document.getElementById("explanation-button");
 const showExplanation = document.getElementById("show-explanation");
 const hideExplanation = document.getElementById("hide-explanation");
+const largeNumToggle = document.getElementById("large-num-toggle");
 
 const numerals = [
   {letter: "M",
@@ -40,12 +41,13 @@ const numerals = [
 ];
 
 let isValidNum = false;
-let largeNumToggle = false;
+let useLargeNumber = false;
 let outputText = ``;
 let errorText = ``;
 
 const reset = () => {
   isValidNum = false;
+  useLargeNumber = largeNumToggle.checked;
   outputText = ``;
   errorText = ``;
 
@@ -68,7 +70,7 @@ const checkNum = (num) => {
         errorText = `<p>Please enter a number greater than or equal to 1</p>`;
         break;
       
-    case num>3999 && largeNumToggle==false:
+    case num>3999 && useLargeNumber==false:
       errorText = `<p>Please enter a number smaller than or equal to 3999</p>`;
       break;
 
@@ -136,7 +138,7 @@ convertBtn.addEventListener("click", () => {
   const num = numberInput.value;
   checkNum(num);
 
-  if (isValidNum && largeNumToggle) {
+  if (isValidNum && useLargeNumber) {
     splitNum(num);
   } else if (isValidNum) {
     convertInput(num);
