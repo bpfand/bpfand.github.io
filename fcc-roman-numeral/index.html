@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <main>
+      <div id="top-div">
+        <h1>Roman Numeral Converter</h1>
+        <p id="definition">Roman numerals are based on six or seven symbols and can be written using various combinations to represent Arabic numerals.</p>
+      </div>
+
+      <div id="converter">
+        <label for="number">Enter a number to convert it to a Roman numeral:</label>
+        <input id="number" type="number" placeholder="Input a number between 1 and 3999" />
+        <button id="convert-btn">Convert</button>
+      </div>
+      
+      <div id="output-div" class="hide">
+        <p id="error-msg"></p>
+        <div id="output-body" class="hide">
+          <h3 id="output-title" class="hide">Roman Numeral:</h3>
+          <div id="output"></div>
+          <div id="explanation" class="hide">
+            <div id="general-explanation">
+              <p>
+                Roman numerals are a <a href="https://en.wikipedia.org/wiki/Numeral_system">numeral system</a> that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each with a fixed integer value. The modern style uses only these seven:
+              </p>
+              <ul class="table">
+                <li>I</li>
+                <li>V</li>
+                <li>X</li>
+                <li>L</li>
+                <li>C</li>
+                <li>D</li>
+                <li>M</li>
+              </ul>
+              <ul class="table">
+                <li>1</li>
+                <li>5</li>
+                <li>10</li>
+                <li>50</li>
+                <li>100</li>
+                <li>500</li>
+                <li>1000</li>
+              </ul>
+            </div>
+
+            <div id="large-explanation" class="hide">
+              <h4>Large Numbers</h4>
+              <p>The Romans developed two main ways of writing large numbers, the apostrophus and the vinculum, this converter uses vinculum.</p>
+              <p>Using the vinculum, conventional Roman numerals are multiplied by 1,000 by adding a "bar" or "overline", thus:
+                <ul>
+                  <li><span class="thousands">IV</span> = 4,000</li>
+                  <li><span class="thousands">XXV</span> = 25,000</li>
+                </ul>
+              </p>
+              <p>In an extension of the vinculum, a three-sided box (now sometimes printed as two vertical lines and a vinculum) is used to multiply by 100,000,[56][50] thus:
+                <ul>
+                  <li><span class="hund-thousands">XIII</span> <span class="thousands">XXXII</span> p. = 1,332,000 paces (1,332 Roman miles)</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <button id="explanation-button" class="hide">
+            <span id="show-explanation">Show Roman numeral explanation</span>
+            <span id="hide-explanation" class="hide">Hide Roman numeral explanation</span>
+          </button>
+        </div>
+      </div>
+      
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
