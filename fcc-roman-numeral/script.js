@@ -10,6 +10,9 @@ const explanationButton = document.getElementById("explanation-button");
 const showExplanation = document.getElementById("show-explanation");
 const hideExplanation = document.getElementById("hide-explanation");
 const largeNumToggle = document.getElementById("large-num-toggle");
+const toggleLgnumExpl = document.getElementById("toggle-lgnum-expl");
+const closeLgExpl = document.getElementById("close-lg-expl");
+const dialog = document.querySelector("dialog");
 
 const numerals = [
   {letter: "M",
@@ -63,15 +66,15 @@ const reset = () => {
 const checkNum = (num) => {
   switch(true) {
     case num=="":
-        errorText = `<p>Please enter a valid number</p>`;
+        errorText = `<h3>Invalid Input:</h3><p>Please enter a number</p>`;
         break;
 
     case num<1:
-        errorText = `<p>Please enter a number greater than or equal to 1</p>`;
+        errorText = `<h3>Invalid Input:</h3><p>Please enter a number greater than or equal to 1</p>`;
         break;
       
     case num>3999 && useLargeNumber==false:
-      errorText = `<p>Please enter a number smaller than or equal to 3999</p>`;
+      errorText = `<h3>Invalid Input:</h3><p>Please enter a number less than or equal to 3999, or enable the large number converter!</p>`;
       break;
 
     default:
@@ -146,9 +149,37 @@ convertBtn.addEventListener("click", () => {
   displayOutput();
 });
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    convertBtn.click();
+  }
+});
+
+largeNumToggle.addEventListener("click", () => {
+  useLargeNumber = largeNumToggle.checked;
+  if (useLargeNumber) {
+    numberInput.placeholder = "Input a positive number";
+  } else {
+    numberInput.placeholder = "Input a number between 1 and 3999";
+  }
+});
+
 explanationButton.addEventListener("click", () => {
   explanation.classList.toggle("hide");
   showExplanation.classList.toggle("hide");
   hideExplanation.classList.toggle("hide");
 });
 
+toggleLgnumExpl.addEventListener("click", () => {
+  dialog.showModal();
+});
+
+closeLgExpl.addEventListener("click", () => {
+  dialog.close();
+});
+
+window.onclick = function (event) {
+  if (event.target == dialog) {
+      dialog.close();
+}};

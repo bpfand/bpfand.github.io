@@ -21,10 +21,29 @@
         <label for="number">Enter a number to convert it to a Roman numeral:</label>
         <input id="number" type="number" placeholder="Input a number between 1 and 3999" />
         
-        <label for="large-num-toggle">Enable <a>large number converter</a>
-        <input id="large-num-toggle" type="checkbox" /> </label>
+        <label for="large-num-toggle" id="large-num-toggle-label">
+          <input id="large-num-toggle" type="checkbox" />
+          Enable <button id="toggle-lgnum-expl">large number converter</button>
+         </label>
         <button id="convert-btn">Convert</button>
       </div>
+
+      <dialog id="large-explanation" class="modal">
+        <h4>Large Numbers</h4>
+        <p>The Romans developed two main ways of writing large numbers, the apostrophus and the vinculum, this converter uses vinculum.</p>
+        <p>Using the vinculum, conventional Roman numerals are multiplied by 1,000 by adding a "bar" or "overline", thus:
+          <ul>
+            <li><span class="thousands">IV</span> = 4,000</li>
+            <li><span class="thousands">XXV</span> = 25,000</li>
+          </ul>
+        </p>
+        <p>In an extension of the vinculum, a three-sided box (now sometimes printed as two vertical lines and a vinculum) is used to multiply by 100,000,[56][50] thus:
+          <ul>
+            <li><span class="hund-thousands">XIII</span> <span class="thousands">XXXII</span> p. = 1,332,000 paces (1,332 Roman miles)</li>
+          </ul>
+        </p>
+        <button id="close-lg-expl">Close</button>
+      </dialog>
       
       <div id="output-div" class="hide">
         <p id="error-msg"></p>
@@ -56,21 +75,7 @@
               </ul>
             </div>
 
-            <div id="large-explanation" class="hide">
-              <h4>Large Numbers</h4>
-              <p>The Romans developed two main ways of writing large numbers, the apostrophus and the vinculum, this converter uses vinculum.</p>
-              <p>Using the vinculum, conventional Roman numerals are multiplied by 1,000 by adding a "bar" or "overline", thus:
-                <ul>
-                  <li><span class="thousands">IV</span> = 4,000</li>
-                  <li><span class="thousands">XXV</span> = 25,000</li>
-                </ul>
-              </p>
-              <p>In an extension of the vinculum, a three-sided box (now sometimes printed as two vertical lines and a vinculum) is used to multiply by 100,000,[56][50] thus:
-                <ul>
-                  <li><span class="hund-thousands">XIII</span> <span class="thousands">XXXII</span> p. = 1,332,000 paces (1,332 Roman miles)</li>
-                </ul>
-              </p>
-            </div>
+
           </div>
           <button id="explanation-button" class="hide">
             <span id="show-explanation">Show Roman numeral explanation</span>
