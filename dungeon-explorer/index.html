@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dungeon Explorer Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="game-screen">
+      <div id="top-bar">
+        <div id="char-resources">
+          <img src="./images/001-heart.png">
+          <span id="health-count" class="resource">
+            </span>
+
+          <img src="./images/002-star.png">
+          <span id="mana-count" class="resource">
+            </span>
+          
+          <img src="./images/003-beer.png">
+          <span id="supply-count" class="resource">
+            </span>
+        </div>
+
+        <div>
+          <img class="resource" id="pathfinder-status" src="./images/004-map-gray.png">
+          <img class="resource" id="shroud-status" src="./images/005-ghost-gray.png">
+        </div>
+
+        <span><span class="eighteen-font-size">lvl </span><span id="level-count" class="resource"></span></span>
+      </div>
+
+      <div id="main-screen" class="centered">
+        <div id="stats"></div>
+        <div id="description-text"></div>
+        <button id="new-game" class="eighteen-font-size">new game?</button>
+      </div>
+
+      <div id="controls"></div>
+      <div id="animations"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

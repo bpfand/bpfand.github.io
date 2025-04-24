@@ -1,0 +1,121 @@
+:root {
+    --grey: #666971;
+    --dark-grey: #3e4045;
+    --white: #faebd7;
+    --blackblue: #0A191F;
+    --darkerblue: #193E4D;
+}
+
+body {
+    height: 97vh;
+    width: 97vw;
+    background-color: var(--blackblue);
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+    background-color: var(--white);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--darkerblue);
+}
+
+.centered {
+    justify-content: center;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eighteen-font-size,
+#controls button {
+    font-size: 18px;
+}
+
+#game-screen {
+    width: 800px;
+    height: 500px;
+    background-color: var(--dark-grey);
+    position: relative;
+    z-index: 0;
+    border: 2px solid var(--darkerblue);
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 20px;
+    font-size: 24px;
+    height: 8%;
+    position: relative;
+    z-index: 2;
+    background-color: var(--grey);
+}
+
+#char-resources {
+    display: flex;
+    vertical-align: middle;
+    gap: 5px;
+}
+
+.resource {
+    padding: 0px 15px 0px 5px;
+    vertical-align: middle;
+}
+
+.active-status {
+    height: 40px;
+}
+
+#main-screen {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#main-screen p {
+    width: 400px;
+    /*position: relative;
+    left: 150px;
+    top: 50px;*/
+    background-color: rgb(from var(--white) r g b / 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.1;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17%;
+    border-top: 2px solid var(--blackblue);
+    background-color: var(--dark-grey);
+    position: relative;
+    z-index: 2;
+}
+
+#controls button {
+    width: 24%;
+    height: 50px;
+}
+
+#animations {
+    position: absolute;
+    top: -15px;
+}
